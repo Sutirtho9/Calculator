@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="Images/Logo.svg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Simple Calculator (For Now)</h1>
+    <div id=calculator>
+        <input id="display" readonly>
+        
+        <div id="keys">
+            <button onclick="AppendElement('7')">7</button>
+            <button onclick="AppendElement('8')">8</button>
+            <button onclick="AppendElement('9')">9</button>
+            <button onclick="clearDisplay()" class="clrbtn">DEL</button>
+            <button onclick="AppendElement('4')">4</button>
+            <button onclick="AppendElement('5')">5</button>
+            <button onclick="AppendElement('6')">6</button>
+            <button onclick="AppendElement('+')">+</button>
+            <button onclick="AppendElement('1')">1</button>
+            <button onclick="AppendElement('2')">2</button>
+            <button onclick="AppendElement('3')">3</button>
+            <button onclick="AppendElement('-')">-</button>
+            <button onclick="AppendElement('.')">.</button>
+            <button onclick="AppendElement('8')">0</button>
+            <button onclick="AppendElement('/')">/</button>
+            <button onclick="AppendElement('*')">x</button>
+            
+        </div>
+        <div class="bigB-cont">
+            <button onclick="clearDisplay()" class="bigB clrbtn">CLEAR</button>
+            <button onclick="calculate()" class="bigB">=</button>
+
+        </div>
+    </div>
+
+
+<footer>
+    <img src="Images/Logo.png" alt="Dev Logo" class="logo">
+  <p>© 2025 Calculator(Simple for now) | Developed by <span class="dev-name">Orange Org</span></p>
+</footer>
+    
+</body>
+</html>
